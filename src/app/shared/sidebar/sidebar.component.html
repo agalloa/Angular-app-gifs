@@ -2,6 +2,8 @@
   <h3 class="text-light">App Gifs</h3>
   <hr class="text-light">
   <div class="list-group list-reset">
-    <a href="#" class="list-group-item list-group-item-action">Dashboard</a>
+    <!-- se crea un pipe para capitalizar las palabras(titlecase) -->
+    <a href="#" class="list-group-item list-group-item-action" *ngFor="let item of historial">{{ item |  titlecase }}</a>
+
   </div>
 </div>
