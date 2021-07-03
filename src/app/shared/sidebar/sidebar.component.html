@@ -3,7 +3,7 @@
   <hr class="text-light">
   <div class="list-group list-reset">
     <!-- se crea un pipe para capitalizar las palabras(titlecase) -->
-    <a href="#" class="list-group-item list-group-item-action" *ngFor="let item of historial">{{ item |  titlecase }}</a>
+    <a href="#" class="list-group-item list-group-item-action" *ngFor="let item of historial" (click)="buscar( item )">{{ item |  titlecase }}</a>
 
   </div>
 </div>
